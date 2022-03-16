@@ -70,7 +70,7 @@ class MainActivity : AppCompatActivity() {
     private fun count(){
         object : CountDownTimer(30000, 1000) {
             override fun onTick(millisUntilFinished: Long) {
-                TimeTextView!!.text = (millisUntilFinished / 1000).toString() + "s"
+                TimeTextView!!.text = "${(millisUntilFinished / 1000)}s"
             }
 
             override fun onFinish() {
